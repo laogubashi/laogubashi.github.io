@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ubuntu,selenium,python," />
 
 
 
@@ -84,15 +84,40 @@
 
 
 
-<meta name="description" content="技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="老古八十博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="ubuntu14.04安装selenium安装
+安装selenium
+1sudo pip3 install selenium
+
+安装chromedriver首先需要下载chromedriver
+123unzip chromedriver_linux64.zipchmod 777 chromedriversudo cp chromedriver /usr/bin/chromedriver
+
+
+hel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu14.04安装selenium">
+<meta property="og:url" content="http://yoursite.com/2016/05/31/ubuntu14-04安装selenium/index.html">
 <meta property="og:site_name" content="老古八十博客">
-<meta property="og:description" content="技术">
+<meta property="og:description" content="ubuntu14.04安装selenium安装
+安装selenium
+1sudo pip3 install selenium
+
+安装chromedriver首先需要下载chromedriver
+123unzip chromedriver_linux64.zipchmod 777 chromedriversudo cp chromedriver /usr/bin/chromedriver
+
+
+hel">
+<meta property="og:updated_time" content="2016-05-31T03:30:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="老古八十博客">
-<meta name="twitter:description" content="技术">
+<meta name="twitter:title" content="ubuntu14.04安装selenium">
+<meta name="twitter:description" content="ubuntu14.04安装selenium安装
+安装selenium
+1sudo pip3 install selenium
+
+安装chromedriver首先需要下载chromedriver
+123unzip chromedriver_linux64.zipchmod 777 chromedriversudo cp chromedriver /usr/bin/chromedriver
+
+
+hel">
 
 
 
@@ -110,7 +135,7 @@
   };
 </script>
 
-  <title> 老古八十博客 </title>
+  <title> ubuntu14.04安装selenium | 老古八十博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +156,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,9 +233,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -232,10 +255,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/31/ubuntu14-04安装selenium/" itemprop="url">
-                  ubuntu14.04安装selenium
-                </a>
+                ubuntu14.04安装selenium
               
             
           </h1>
@@ -275,9 +295,7 @@
       
 
       
-        
-          
-            <h1 id="ubuntu14-04安装selenium"><a href="#ubuntu14-04安装selenium" class="headerlink" title="ubuntu14.04安装selenium"></a>ubuntu14.04安装selenium</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+        <h1 id="ubuntu14-04安装selenium"><a href="#ubuntu14-04安装selenium" class="headerlink" title="ubuntu14.04安装selenium"></a>ubuntu14.04安装selenium</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
 <li><p>安装selenium</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 <span class="keyword">install</span> selenium</span><br></pre></td></tr></table></figure>
 </li>
@@ -287,130 +305,62 @@
 </ol>
 <h2 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">login</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setUp</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.driver = webdriver.Chrome()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_baidu</span><span class="params">(self)</span>:</span></span><br><span class="line">        driver = self.driver</span><br><span class="line">        driver.get(<span class="string">'http://www.baidu.com'</span>)</span><br><span class="line">        time.sleep(<span class="number">1</span>)</span><br><span class="line">        elem2 = driver.find_element_by_id(<span class="string">'kw'</span>)</span><br><span class="line">        elem2.send_keys(<span class="string">'Hello world!'</span>)</span><br><span class="line">        time.sleep(<span class="number">1</span>)</span><br><span class="line">        elem2 = driver.find_element_by_id(<span class="string">'su'</span>).click()</span><br><span class="line">        time.sleep(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tearDown</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.driver.close()</span><br><span class="line">        print(<span class="string">'测试成功'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:  </span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/31/开始/" itemprop="url">
-                  开始
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-31T09:29:41+08:00" content="2016-05-31">
-              2016-05-31
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/ubuntu/" rel="tag">#ubuntu</a>
           
-            
+            <a href="/tags/selenium/" rel="tag">#selenium</a>
           
-
-          
-
-          
-          
-
+            <a href="/tags/python/" rel="tag">#python</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="新的开始"><a href="#新的开始" class="headerlink" title="新的开始"></a>新的开始</h1><p>期待新的旅途</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/31/开始/" rel="next" title="开始">
+                <i class="fa fa-chevron-left"></i> 开始
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -418,6 +368,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -437,8 +391,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -481,6 +444,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ubuntu14-04安装selenium"><span class="nav-number">1.</span> <span class="nav-text">ubuntu14.04安装selenium</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hello-world"><span class="nav-number">1.2.</span> <span class="nav-text">hello world</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -577,6 +551,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
